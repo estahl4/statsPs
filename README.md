@@ -18,6 +18,9 @@ Output (to stdout), <tab>-delimited:
   'x: <mean> sd: <sd> n: <n>[ <percentile arg>ile: <percentile>...][ P(x<<obs_val>): <P(x<obs_val)>...][ CV<alpha>: <critval> <Psig-if==critval>...]<newline>
 
 // NB: statsPs expects input from stdin. You must `echo | statsPs` even to see the Usage message.
+  
 //     Compile with:
+  
          gcc -o statsPs statsPs.c -lm 
+  
 You must have std C math library with LD_LIBRARY_PATH set. 
